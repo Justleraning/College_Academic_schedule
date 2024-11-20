@@ -1,0 +1,125 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px; /* Limit the width for better layout */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for the container */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift the container on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Title */
+.main-title {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Validation Messages */
+.validation-message {
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+.signup-box {
+    margin-top: 20px; /* Space above the signup box */
+    padding: 15px; /* Padding inside the box */
+    background-color: #f0f4f8; /* Light background color */
+    border: 1px solid #007bff; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+}
+.forgot-password {
+    margin-top: 10px; /* Space above the forgot password link */
+    text-align: center; /* Center the text */
+}
+
+.forgot-password a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Transition for link color */
+}
+
+.forgot-password a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker color on hover */
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/signup.css"> 
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Create Account</h1>
+        <form id="signupForm" action="/signup" method="POST" onsubmit="return validateForm()">
+            <div class="input-group">
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required pattern="^[A-Za-z\s]+$" title="Full Name must contain only letters and spaces.">
+            </div>
+            <div class="input-group">
+                <input type="text" id="emailOrMobile" name="emailOrMobile" placeholder="Email or Mobile Number" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div id="password-validation" class="validation-message"></div>
+            </div>
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Username" required pattern="^[A-Za-z][A-Za-z0-9_]{7,}$" title="Username must start with a letter and be at least 8 characters long.">
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <div class="login-box">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </div>
+
+<script src ="../JS/signup.js"></script>
+</body>
+</html>

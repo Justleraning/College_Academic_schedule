@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px; /* Limit the width for better layout */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for the container */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift the container on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.main-title {
+    font-size: 32px; /* Larger font size for the main title */
+    color: #007bff; /* Primary color */
+    margin-bottom: 20px; /* Space below the title */
+    font-weight: bold; /* Make title bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Transition for input border */
+}
+
+.input-group input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for button */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Slight push down on click */
+}
+
+.validation-message {
+    margin-top: 10px;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Transition for link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker color on hover */
+}
+.validation-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red; /* Color for error messages */
+}
+
+.valid {
+    color: green; /* Color for valid messages */
+}
+.login-box {
+    margin-top: 20px; /* Space above the login box */
+    padding: 15px; /* Padding inside the box */
+    border: 1px solid #007bff; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f0f8ff; /* Light background color */
+    text-align: center; /* Center the text */
+}
+
+.login-box a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Transition for link color */
+}
+
+.login-box a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3; /* Darker color on hover */
+}

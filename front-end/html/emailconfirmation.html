@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/emailConfirmation.css"> 
+    <script src="../JS/emailConfirmation.js" defer></script>
+    <title>Email Confirmation</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Email Confirmation</h1>
+        <p>Please enter the 6-digit code sent to your email.</p>
+        <form id="confirmationForm" onsubmit="return validateCode()">
+            <div class="input-group">
+                <input type="text" id="verificationCode" name="verificationCode" placeholder="6-Digit Code" required maxlength="6" pattern="\d{6}">
+            </div>
+            <button type="submit">Verify Code</button>
+            <div id="code-validation" class="validation-message"></div>
+        </form>
+        <button id="resendCode">Resend Code</button>
+        <p id="expiryMessage" style="display:none;">The code is valid for 5 minutes. Please request a new one if it has expired.</p>
+    </div>
+   
+</body>
+</html>
